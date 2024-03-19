@@ -5,7 +5,7 @@
 // This file contains the JS functions for index.html
 
 /**
- * This function gets users first name and age and shows it back to user.
+ * This function gets users street number and street name and shows it back to user.
  */
 function enterClicked() {
   // input
