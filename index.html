@@ -32,22 +32,18 @@
           <p style="font-size: x-large">Please enter the following:</p>
         </div>
         <br />
-        <form action="answer.php" method="POST">
+        <!-- Simple Textfield for integers-->
+        <!-- Simple Textfield -->
           <p>Street Number</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="street-number">
-            <label class="mdl-textfield__label" for="number-input">Street Number ...</label>
-          </div>
-          <br />
+          <div class="mdl-textfield mdl-js-textfield"> <input class="mdl-textfield__input" type="text" id="street-number"> <label
+              class="mdl-textfield__label" for="sample1">Street Number</label> </div> <!-- Numeric Textfield -->
           <p>Street Name</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text"  name="street-name">
-            <label class="mdl-textfield__label" for="name-input">Street Name ...</label>
-            <span class="mdl-textfield__error">Input is not a name!</span>
-          </div>
-          <br />
-          <!-- Accent-colored raised button with ripple -->
-          <input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
+          <div class="mdl-textfield mdl-js-textfield"> <input class="mdl-textfield__input" type="text"
+                id="street-name"> <label class="mdl-textfield__label" for="street-name">Street Name...
+              </label> <span class="mdl-textfield__error">Input is not a name!</span> </div> <br />
+          <!-- Accent-colored raised button with ripple --> <button
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            onclick="enterClicked()"> Enter </button>
         </form>
         <br />
           <div class="page-content-answer">
